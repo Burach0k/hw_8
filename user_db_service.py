@@ -51,7 +51,7 @@ class UserDBService:
     def find_user(self, user: User):
         return self.execute(self._find_user, user)
 
-    def Delete_emails_for_user(self, user_id):
+    def delete_emails_for_user(self, user_id):
         self.execute(self._delete_emails_for_user, user_id)
 
     def _create_tables(self, connect):
